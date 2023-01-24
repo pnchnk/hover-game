@@ -1,18 +1,8 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 
 export interface Mode {
-    id: number,
-    title: string,
-    description: string,
-    price: number,
-    discountPercentage: number,
-    rating: number,
-    stock: number,
-    brand: string,
-    category: string,
-    thumbnail: string,
-    images: [string],
-    quantity: number,
+    name: string,
+    field: number,
   }
 
 export const modeApi = createApi({
